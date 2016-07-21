@@ -174,7 +174,7 @@ function ENT:Think()
 			local time_to_target = (endpos - start):Length() / self.fire_speed
 			endpos = targetpos + target:GetVelocity() * time_to_target
 		end
-		local dir = (endpos - start):Normalize()
+		local dir = (endpos - start):GetNormalized()
 
 		local launcher = ents.Create( "point_combine_ball_launcher" )
 		launcher:SetKeyValue( "minspeed", tostring( self.fire_speed ) )

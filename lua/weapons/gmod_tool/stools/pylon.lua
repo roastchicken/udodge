@@ -1,7 +1,5 @@
 TOOL.Category   = "Pylon"
 TOOL.Name     = "#tool.pylon.name"
-TOOL.Command    = nil
-TOOL.ConfigName   = ""
 
 TOOL.ClientConVar[ "fire_rate" ] = "1.5"
 TOOL.ClientConVar[ "fire_rate_stddev" ] = "0.3"

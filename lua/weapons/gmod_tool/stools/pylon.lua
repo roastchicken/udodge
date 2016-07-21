@@ -38,7 +38,7 @@ function TOOL:LeftClick( trace )
 
   if not self:GetSWEP():CheckLimit( "pylons" ) then return false end
 
-  local Ang = Angle:Zero()
+  local Ang = Angle()
   local spawn = trace.HitPos + trace.HitNormal * 8
   local pylon = MakePylon( ply, spawn, Ang, fire_rate, fire_rate_stddev, fire_radius, fire_speed, cball_lifetime, target_closest, false )
 

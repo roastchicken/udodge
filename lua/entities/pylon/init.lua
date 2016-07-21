@@ -167,7 +167,7 @@ function ENT:Think()
 
 		local start = self:GetPos() + self.fire_offset
 		local targetpos = target:GetPos() + TARGET_OFFSET
-		start = start + (targetpos - start):Normalize() * self:BoundingRadius() -- Get the spawn point out of the barrel
+		start = start + (targetpos - start):GetNormalized() * self:BoundingRadius() -- Get the spawn point out of the barrel
 
 		local endpos = targetpos
 		for pass=1, 4 do -- Make a few passes to approximate future position. There's a closed-form solution to this but it's nasty!

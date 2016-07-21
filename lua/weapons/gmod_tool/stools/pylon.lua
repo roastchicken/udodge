@@ -1,5 +1,5 @@
 TOOL.Category   = "Pylon"
-TOOL.Name     = "Pylon Spawner"
+TOOL.Name     = "#tool.pylon.name"
 TOOL.Command    = nil
 TOOL.ConfigName   = ""
 
@@ -13,8 +13,8 @@ TOOL.ClientConVar[ "target_closest" ] = "0"
 cleanup.Register( "Pylons" )
 
 if CLIENT then
-  language.Add( "Tool_pylon_name", "Pylon Spawner" )
-  language.Add( "Tool_pylon_desc", "Spawns a pylon that will shoot combine balls at passersby!" )
+  language.Add( "tool.pylon.name", "Pylon Spawner" )
+  language.Add( "tool.pylon.desc", "Spawns a pylon that will shoot combine balls at passersby!" )
   language.Add( "Tool_pylon_0", "Left click to place a pylon. Right click on a pylon to update it" )
   language.Add( "Undone_Pylon", "Undone Pylon" )
   language.Add( "SBoxLimit_pylons", "You've hit the Pylons limit!" )
